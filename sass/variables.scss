@@ -1,0 +1,15 @@
+$mainBG: url('../img/bg.png');
+
+@mixin borStyle ($width, $type, $color) {
+	border: $width $type $color;
+}
+
+@mixin quote ($style, $width, $color, $bg, $radius){
+	border-style: $style;
+	border-width: $width;
+	border-color: $color;
+	background: $bg;
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-bottom-right-radius: $radius;
+}
